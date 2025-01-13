@@ -59,6 +59,7 @@ export function TagSelect({ selectedTags, onChange }: TagSelectProps) {
       .single()
 
     if (error) {
+      console.log(error)
       toast.error('Failed to create tag')
       return
     }
